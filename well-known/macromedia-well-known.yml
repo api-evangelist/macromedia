@@ -1,0 +1,12 @@
+generated: '2026-07-20'
+method: searched
+source: live probe of https://www.macromedia.com/.well-known/*
+note: >-
+  www.macromedia.com 301-redirects to www.adobe.com; the /.well-known/security.txt
+  resolved here is Adobe's canonical security.txt (Adobe acquired Macromedia in 2005).
+host: https://www.macromedia.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: macromedia-security.txt
+  note: redirects to https://www.adobe.com/.well-known/security.txt (Adobe PSIRT)
