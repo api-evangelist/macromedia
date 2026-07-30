@@ -1,8 +1,22 @@
 aid: macromedia
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/macromedia.png
 name: Macromedia
-description: 'Macromedia is a company surfaced as a portfolio company of accel, kleiner-perkins and added
-  to the API Evangelist network as a stub for enrichment. Sector: developer-tools. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Macromedia was a developer-tools and interactive-media software company (Flash, Dreamweaver,
+  ColdFusion, Shockwave, Director, Fireworks) surfaced as a portfolio company of accel and kleiner-perkins.
+  Adobe acquired Macromedia in 2005; www.macromedia.com now 301-redirects to www.adobe.com and the domain
+  serves Adobe''s canonical security.txt / PSIRT disclosure surface. This profile is a legacy company lead
+  in the API Evangelist network with no independent live API surface of its own.'
 url: https://raw.githubusercontent.com/api-evangelist/macromedia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Developer Tools
+- Software
+- Adobe
+- Interactive Media
+- Web Development
+- Legacy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +43,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/macromedia-vulnerability-disclosure.yml
+- type: Security
+  url: https://helpx.adobe.com/security.html/security/policy.ug.html
+- type: DomainSecurity
+  url: security/macromedia-domain-security.yml
+- type: WellKnown
+  url: well-known/macromedia-well-known.yml
+- type: SecurityTxt
+  url: well-known/macromedia-security.txt
 - type: Website
   url: http://www.macromedia.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
